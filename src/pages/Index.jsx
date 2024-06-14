@@ -2,9 +2,7 @@
 // Use chakra-ui
 import { Container, Text, VStack } from "@chakra-ui/react";
 
-// Example of using react-icons
-// import { FaRocket } from "react-icons/fa";
-// <IconButton aria-label="Add" icon={<FaRocket />} size="lg" />; // IconButton would also have to be imported from chakra
+import LeadCard from "../components/LeadCard";
 
 const Index = () => {
   return (
@@ -12,6 +10,7 @@ const Index = () => {
       <VStack spacing={4}>
         <Text fontSize="2xl">Your Blank Canvas</Text>
         <Text>Chat with the agent to start making edits.</Text>
+        <LeadCard name="John Doe" phone="555-123-4567" email="john.doe@example.com" />
       </VStack>
     </Container>
   );
